@@ -41,7 +41,8 @@ function checkAnswer(value){
   if(counter == 2){
     if(value == 10){
       score+=1;
-
+      question_header.innerHTML = "Questions Complete";
+      document.getElementById('score').innerHTML = score;
 
     }else {
       question_header.innerHTML = "Questions Complete";
