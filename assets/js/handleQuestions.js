@@ -17,7 +17,7 @@ window.onload = function handleQuestions(){
 //function changes header question
 function changeHeader(){
   var answer;
-  
+
   answer = input.value;
   checkAnswer(answer);
   counter++;
@@ -41,6 +41,9 @@ function checkAnswer(value){
   if(counter == 2){
     if(value == 10){
       score+=1;
+
+
+    }else {
       question_header.innerHTML = "Questions Complete";
       document.getElementById('score').innerHTML = score;
     }
